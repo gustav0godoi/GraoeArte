@@ -1,5 +1,6 @@
 @import url(./reset.css);
 @import url(./variables.css);
+@import url(./responsive.css);
 
 
 .main{
@@ -63,6 +64,48 @@
     background-color: var(--color-primary-hover);
     color: var(--color-bg-main);
     transform: translateY(-2px);
+}
+
+.section-inicio{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    border-bottom: 1px solid var(--color-border);
+    scroll-margin-top: var(--header-height);
+}
+
+
+.section-inicio__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section-inicio--reverse .section-inicio__container{
+    flex-direction: row-reverse;
+}
+
+.section-inicio__content{
+    flex: 1;
+}
+
+.section-inicio--aside{
+    flex: 1;
+}
+
+.section-inicio__title {
+    font-size: var(--font-size-xl);
+    margin-bottom: 15px;
+}
+
+.section-inicio__text {
+    color: var(--color-text-muted);
+    margin-bottom: 15px;
+    font-size: var(--font-size-base);
 }
 
 
